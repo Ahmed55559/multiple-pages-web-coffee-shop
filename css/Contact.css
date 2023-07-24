@@ -1,0 +1,55 @@
+.contact {
+    height: 100vh;
+    margin-top: 74.05px;
+}
+
+.contact .container {
+    height: 100%;
+}
+
+.contact .container form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.contact .container form .main-input,
+.contact .container form textarea {
+    width: 60%;
+    caret-color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+
+    .contact .container form .main-input,
+    .contact .container form textarea {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+.contact .container form textarea {
+    resize: none;
+    height: 300px;
+}
+
+.contact .container form input[type="submit"] {
+    align-self: end;
+    padding: 11px 15px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    border: none;
+    transition: var(--main-duration);
+    -webkit-transition: var(--main-duration);
+    -moz-transition: var(--main-duration);
+    -ms-transition: var(--main-duration);
+    -o-transition: var(--main-duration);
+}
+.contact .container form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
